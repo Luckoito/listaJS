@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="Pt-BR">
+<head>
+    <script src="./scriptLista.js" async></script>
+    <link href="./style.css" rel="stylesheet">
+    <link href="https://fonts.google.com/specimen/ABeeZee" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de JS</title>
+</head>
+<body>
+    
+    <div class="header">
+
+        <div class="title">
+            <a href="./index.html">Exercício de JS</a>
+        </div>
+
+        <div class="links">
+                <a href="./atv1.html">Média</a>
+                <a href="./atv2.html">IMC</a>
+                <a href="./atv3.html">Lista</a>
+                <a href="./membros.html">Membros</a>
+        </div>
+
+    </div>
+
+    <div class="content"> 
+
+        <h1>Atividade 3: Listas e Append</h1>
+
+        <div class="contentText">
+
+            <div class="listBlock" id="listBlock">
+
+                <h2 id="listName"></h2>
+                <Ul id="list"></Ul>
+
+                <input type="text" id="listLine" placeholder="Item">
+               
+                <div class="colorSelectDiv">
+
+                    <form class="colorSelect" id="colorSelect">
+
+                        <input type="radio" id="white" name="colorSelectRadio" value="white">
+                        <label for="white">Branco</label>
+
+                        <input type="radio" id="pink" name="colorSelectRadio" value="pink">
+                        <label for="pink">Rosa</label>
+
+                        <input type="radio" id="red" name="colorSelectRadio" value="red">
+                        <label for="red">Vermelho</label>
+                        
+                    </form>
+
+                </div>
+                
+                <p id="errorMessage"></p>
+
+                <div class="listButtons">
+                    <button id="resetList">Recomeçar</button>
+                    <button id="appendButton">Adicionar</button>
+                </div>
+
+            </div>
+
+            <div class="listCreateBlock" id="listCreateBlock">
+
+                <h2>Criar Lista</h2>
+
+                <form class="listCreateForm">
+
+                    <select id="listTypeSelect">
+                        <option value="placeholder" selected style="display: none;">Tipo de lista</option>
+                        <option value="compras">Compras</option>
+                        <option value="tarefas">Tarefas</option>
+                        <option value="padrao">Personalizada</option>
+                    </select>
+
+                    <input type="text" id="inputListName" placeholder="Nome da Lista">
+                    <p id="invalidList"></p>
+                    
+                </form>
+
+                <button id="createList">Criar Lista</button>
+
+            </div>
+            
+
+        </div>
+
+    </div>
+
+</body>
+</html>

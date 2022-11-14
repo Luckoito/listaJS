@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="Pt-BR">
+<head>
+    <script src="./scriptMedia.js" async></script>
+    <link href="./style.css" rel="stylesheet">
+    <link href="https://fonts.google.com/specimen/ABeeZee" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de JS</title>
+</head>
+<body>
+    
+    <div class="header">
+
+        <div class="title">
+            <a href="./index.html">Exercício de JS</a>
+        </div>
+
+        <div class="links">
+                <a href="./atv1.html">Média</a>
+                <a href="./atv2.html">IMC</a>
+                <a href="./atv3.html">Lista</a>
+                <a href="./membros.html">Membros</a>
+        </div>
+
+    </div>
+
+    <div class="content" id="atv1Content"> 
+
+        <h1>Atividade 1: Cálculo de média</h1>
+
+        <div class="contentText">
+
+            <div class="listAlunos">
+
+                <h2>Alunos</h2>
+
+                <div id="alunosInseridos"><span class="placeholderText">Insira alunos abaixo!</span></div>
+
+                <div class="alunoInput">
+                
+                    <input type="text" id="alunoIn" name="alunoIn" placeholder="Nome do aluno"> 
+                    <button id="addAluno" onclick="insertAluno()"> Adicionar </button>
+
+                </div>
+
+                <div class="alunoInput">
+
+                    <input type="text" id="alunoOut" name="alunoOut" placeholder="ID do aluno"> 
+                    <button class="deleteAluno" onclick="removeAluno()">Remover</button>
+
+                </div>
+
+            </div>
+
+            <div class="calcMedia">
+
+                <h2>Calcular Média</h2>
+
+                <div class="notaInput">
+
+                    <input type="text" id="alunoMedia" placeholder="ID do aluno">
+                    <input type="text" id="nota1" placeholder="Nota 1">
+                    <input type="text" id="nota2" placeholder="Nota 2">
+                    <p id="errorMessage"></p>
+                    <button class="calculateMedia" onclick="calculateMedia()">Calcular</button>
+    
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

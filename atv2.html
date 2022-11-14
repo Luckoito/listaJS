@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="Pt-BR">
+<head>
+    <script src="./scriptIMC.js" async></script>
+    <link href="./style.css" rel="stylesheet">
+    <link href="https://fonts.google.com/specimen/ABeeZee" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de JS</title>
+</head>
+<body>
+    
+    <div class="header">
+
+        <div class="title">
+            <a href="./index.html">Exercício de JS</a>
+        </div>
+
+        <div class="links">
+                <a href="./atv1.html">Média</a>
+                <a href="./atv2.html">IMC</a>
+                <a href="./atv3.html">Lista</a>
+                <a href="./membros.html">Membros</a>
+        </div>
+
+    </div>
+
+    <div class="content"> 
+
+        <h1>Atividade 2: Cálculo de IMC</h1>
+
+        <div class="contentIMC">
+
+            <div class="contentIMCText">
+
+                <h2> Sobre o IMC </h2>
+
+                <p>O índice de massa corporal (IMC) é uma medida internacional usada para calcular se uma pessoa está no peso ideal,
+                trata-se de um método fácil e rápido para a avaliação do nível de gordura de cada pessoa, sendo assim um 
+                preditor internacional de obesidade, adotado pela Organização Mundial da Saúde (OMS).
+                O IMC é determinado pela divisão da massa do indivíduo pelo quadrado de sua altura.
+                </p>
+
+                <br>
+
+                <a href="https://pt.wikipedia.org/wiki/%C3%8Dndice_de_massa_corporal" target="_blank"> Fonte: Wikipédia </a>
+
+            </div>
+
+
+
+            <div class="contentIMCCalc">
+
+                <h2 id="IMCTitle"> Calcular </h2>
+                <p id="IMCSubTitle">Seu IMC é </p>
+
+                <div class="IMCInput" id="IMCInput">
+
+                    <input type="text" id="pessoaNome" placeholder="Seu nome">
+                    <input type="text" id="peso" placeholder="Seu peso (em kg)">
+                    <input type="text" id="altura" placeholder="Sua altura (em metros)">
+                    <p id="errorMessage"></p>
+                    <button class="calculateMedia" id="calculateMedia" onclick="calculateIMC()">Calcular</button>
+                    
+                </div>
+
+                <div class="IMCInput" id="Resultado">
+
+                        <p id="IMCResult"></p>
+                        <br>
+                        <p><span id="sentenceStart"></span> Você está <span id="sentenceSituacao"></span></p>
+                        <button class="reset" id="reset" onclick="resetIMC()">Recomeçar</button>
+
+                </div>
+    
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

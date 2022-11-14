@@ -1,0 +1,138 @@
+*{margin: 0;padding: 0;}
+
+body {background-image: url("./Imagens/BG.jpg"); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed;}
+a, p,h1, h2, span, input, button, select, li, form{text-decoration: none; color: white; font-family: ABeeZee, sans-serif; font-size: 20px; line-height: 30px;}
+
+.header {display: flex; flex-direction: row; justify-content: space-between; background-color: rgba(39,41,64,255); margin-inline: 25px;
+     position: sticky; top: 30px; border-radius: 2px;box-shadow: 1px 1px 5px rgba(48, 12, 12, 0.363);} 
+
+.title {display: flex; align-content: center; height: fill; justify-content: center;
+     flex-direction: column; margin-inline: 25px;}
+.title a {transition: all 0.2s; font-weight: bold;}
+.title a:hover {color: rgb(255,47,63); text-shadow: 1px 1px 10px rgb(0, 0, 0); font-weight: bolder;}
+.title a:active {color: white; text-shadow: 1px 1px 10px rgb(247, 157, 157);}
+
+.links {margin: 15px; display: flex; flex-direction: row; transition: all 0.2s;}
+.links a {padding: 7px; padding-inline: 13px;  border-radius: 3px; margin-inline: 3px; transition: all 0.2s;}
+.links a:hover {background-color: rgba(240,64,79,255);
+    box-shadow: 1px 1px 15px rgb(68, 26, 26), inset 1px 1px 15px rgb(211, 91, 91);}
+
+.content {display: flex; flex-direction: column; margin: 3%;}
+
+.content h1 {font-size: 50px; margin: 50px; text-shadow:1px 1px 15px rgb(48, 33, 33), 1px 1px 3px rgba(160, 96, 96, 0.699); text-align: center;}
+
+.contentText {display: flex; flex-direction: row; justify-content: center;}
+
+.contentBlock h2{text-align: center; margin-bottom: 10px; font-size: 25px;}
+.contentBlock {padding: 30px; text-align: left; margin: 1%; width: 33%;
+    background-color: rgba(39,41,64,255); border-radius: 5px; transition: all 0.2s; border-color: transparent; border-style:ridge; border-width: 2px;
+    box-shadow: 1px 1px 25px rgba(73, 11, 11, 0), 1px 1px 20px rgba(37, 6, 6, 0.5);}
+.contentBlock:hover {transform: scale(1.05); border-color: rgb(175, 11, 25); 
+    box-shadow: inset 1px 1px 10px rgba(156, 9, 21, 0.541), 1px 1px 25px rgba(73, 11, 11, 0.397),1px 1px 20px rgba(37, 6, 6, 0.74);}
+
+.listAlunos {padding: 30px; margin: 1%; display: flex; flex-direction: column; align-items: center;
+    background-color: rgba(39,41,64,255); border-radius: 5px;
+    box-shadow: 1px 1px 25px rgba(73, 11, 11, 0), 1px 1px 20px rgba(37, 6, 6, 0.5);}
+.content h2 {margin-bottom: 10px; font-size: 25px;}
+
+.placeholderText {text-align: center; font-size: 30px; margin-block: 4%}
+
+#alunosInseridos {display: flex; flex-direction: column; margin: 5%;width: 100%;}
+
+.cabecalhoAlunos {display: flex; flex-direction: row; justify-content: space-between; width: 100%; margin-block: 2%;}
+
+.alunoLine {display: flex; flex-direction: row; justify-content: space-between; align-items: center;
+    border-top: 3px; border-bottom: 0px; border-left: 0px; border-right: 0px; border-style:inset; border-top-color: rgba(39, 41, 64, 0.158);}
+    
+.alunoID, .alunoMedia, .cabecalhoID, .cabecalhoMedia {font-size: 20px; width: 50px; text-align: center; margin-block: 3%;}
+.alunoNome, .cabecalhoNome, .alunoSitu, .cabecalhoSitu {width: 100px; font-size: 20px; text-align: center; margin-block: 3%;}
+
+.alunoInput {display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: center;
+    border-top: 3px; border-bottom: 0px; border-left: 0px; border-right: 0px; border-style:inset;
+    border-top-color: rgba(39, 41, 64, 0.158);}
+
+.content input {padding-inline:3%;background-color: transparent; border: 2px inset transparent; margin: 5%;
+    border-radius: 5px; transition: all 0.2s;  outline: none; text-align: center;
+    box-shadow: inset 0.5px 0.5px 5px rgb(27, 28, 46);}
+.content input:hover {
+    box-shadow: inset 0.5px 0.5px 10px rgba(37, 6, 6, 0.5), inset 0.5px 0.5px 5px rgb(27, 28, 46);}
+.content input:focus {border-color: rgb(216, 13, 30);
+    box-shadow: inset 0.5px 0.5px 10px rgba(66, 4, 4, 0.671), inset 0.5px 0.5px 5px rgb(27, 28, 46);}
+.content button {width: fit-content; padding-inline: 3%; background-color: transparent; border: none; border-radius: 3px; transition: all 0.2s; margin-block: 2%;
+    box-shadow: 0.5px 0.5px 4px rgb(27, 28, 46);}
+.content button:hover {box-shadow: 0.5px 0.5px 15px rgba(66, 4, 4, 0.24), 0.5px 0.5px 5px rgb(27, 28, 46); cursor: pointer;}
+.content button:active {box-shadow: 0.5px 0.5px 15px rgba(114, 4, 4, 0.836), 0.5px 0.5px 5px rgb(27, 28, 46);}
+
+.calcMedia {padding: 30px; margin: 1%; display: flex; flex-direction: column; align-items: center;
+    background-color: rgba(39,41,64,255); border-radius: 5px; max-height: 330px;
+    box-shadow: 1px 1px 25px rgba(73, 11, 11, 0), 1px 1px 20px rgba(37, 6, 6, 0.5);}
+
+.notaInput {display: flex;flex-direction: column; align-items: center;}
+#atv1Content input {width: 50%;}
+
+.contentIMC {display: flex; flex-direction: row; justify-content: space-between;}
+
+.contentIMCText {display: flex; flex-direction: column;justify-content: space-around; 
+    padding: 30px; text-align: left; margin: 1%; min-height: 300px;
+    background-color: rgba(39,41,64,255); border-radius: 5px; transition: all 0.2s; border-color: transparent; border-style:ridge; border-width: 2px;
+    box-shadow: 1px 1px 25px rgba(73, 11, 11, 0), 1px 1px 20px rgba(37, 6, 6, 0.5);}
+.contentIMCText p { font-size: 25px;}
+.contentIMCText a {transition: all 0.2s;}
+.contentIMCText a:hover {color: rgb(255,47,63); text-shadow: 1px 1px 10px rgb(0, 0, 0);}
+.contentIMCText a:active {color: white; text-shadow: 1px 1px 10px rgb(247, 157, 157);}
+
+.contentIMCCalc {display: flex; flex-direction: column; justify-content: space-around;
+    padding: 30px; text-align: center; margin: 1%; height: 300px;
+    background-color: rgba(39,41,64,255); border-radius: 5px; transition: all 0.2s; border-color: transparent; border-style:ridge; border-width: 2px;
+    box-shadow: 1px 1px 25px rgba(73, 11, 11, 0), 1px 1px 20px rgba(37, 6, 6, 0.5);}
+
+.IMCInput {display: flex;flex-direction: column; align-items: center; max-height: 500px;}
+
+.listCreateBlock, .listBlock { flex-direction: column;justify-content: center;
+    padding: 30px; text-align: left; margin: 1%; height: fit-content; align-items: center;
+    background-color: rgba(39,41,64,255); border-radius: 5px; transition: all 0.2s; border-color: transparent; border-style:ridge; border-width: 2px;
+    box-shadow: 1px 1px 25px rgba(73, 11, 11, 0), 1px 1px 20px rgba(37, 6, 6, 0.5);}
+
+.listBlock {display: none; min-width: 450px;}
+.listCreateBlock {display: flex;}
+
+.listBlock li{display: flex; flex-direction: row;}
+.listBlock label {padding-inline: 10%;}
+
+.listCreateForm {display: flex;flex-direction: column;justify-content: center; align-items: center; width: 200px;}
+.listCreateBlock input {width: 180px;}
+
+.listCreateForm select {padding:3%;background-color: transparent; border: 2px inset transparent; margin: 5%;
+    border-radius: 5px; transition: all 0.2s;  outline: none; text-align: center; width: 100%;
+    box-shadow: inset 0.5px 0.5px 5px rgb(27, 28, 46);}
+.listCreateForm select option {background-color: rgba(39,41,64,255);}
+
+.listButtons {display: flex; flex-direction: row; width: 100%; justify-content: space-between;}
+
+#list {list-style-type: none;}
+
+#IMCResult {font-size: 30px;}
+
+#IMCSubTitle, #Resultado, #inputListName {display: none;}
+
+#invalidList {text-align: center;}
+
+.listBlock li input{background-color: transparent; box-shadow: none;}
+.listBlock li input:hover {background-color: transparent; box-shadow: none;}
+.listBlock li input:focus {background-color: transparent; box-shadow: none;}
+.listBlock li {border-top: 0px; border-bottom: 3px; border-left: 0px; border-right: 0px; border-style:inset; border-bottom-color: rgba(100, 26, 26, 0.616); padding-block: 4%;}
+.listBlock ul {margin: 5%; width: 100%; }
+
+.colorSelect {display: flex; flex-direction: row; justify-content: center; margin-block: 5%;}
+
+.members {display: flex; flex-direction: row; align-items: center; justify-content: space-around;}
+.member {display: flex; flex-direction: column; align-items: center; justify-content: center; margin-block: 2%;}
+.member img {width: 250px;height: 350px; overflow: hidden; border-radius: 5%; object-fit: cover; transition: all 0.2s;}
+.member img:hover {transform: scale(1.3); border-radius: 10%;}
+
+
+.member p {font-size: 30px; margin: 25px; padding: 25px; text-shadow:1px 1px 15px rgb(48, 33, 33), 1px 1px 3px rgba(160, 96, 96, 0.699); text-align: center;
+    background-color: rgba(39,41,64,255); border-radius: 5px; border-color: transparent; border-style:ridge; border-width: 2px;
+    box-shadow: 1px 1px 25px rgba(73, 11, 11, 0), 1px 1px 20px rgba(37, 6, 6, 0.5);}
+
+
